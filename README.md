@@ -1,4 +1,4 @@
-# electingwomen
+# Electing Women
 
 > UI for the electing women toolkit for Women's Peer 2 Peer network developed using vue.js
 
