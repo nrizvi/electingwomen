@@ -1,0 +1,1 @@
+"# electingwomen"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/nrizvi/electingwomen.gitgit push -u origin master
