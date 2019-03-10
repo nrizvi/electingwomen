@@ -2,9 +2,10 @@
 
 > UI for the electing women toolkit for Women's Peer 2 Peer network developed using vue.js
 
-# This project uses vue.js & bootstrap. If you are new to either one of those two frameworks, here are some good guides to follow: 
+``` # This project uses vue.js & bootstrap. If you are new to either one of those two frameworks, here are some good guides to follow: 
 [Good hands-on tutorial for Vue](https://medium.com/@maeganwilson_/how-to-create-a-navigation-bar-in-vue-js-8a70e7f29f80)
-[For using Bootstrap with Vue](https://bootstrap-vue.js.org/docs/reference/starter-templates/)
+[For using Bootstrap with Vue](https://bootstrap-vue.js.org/docs/reference/starter-templates/) ```
+
 
 ## Build Setup
 
