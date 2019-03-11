@@ -1,15 +1,15 @@
 <template>
-  <div class="navbar">
+  <b-navbar class="navbar" fixed="top">
     <nav>
-      <span class="header">
-        <h3 class="heading">Electing Women</h3>
-        <h2 class="subheading">TESTIMONY</h2>
-      </span>
       <router-link class="spacing navlinks" v-for="routes in links"
                    v-bind:key="routes.id"
                    :to="`${routes.page}`">{{routes.text}}</router-link>
+     <span class="header">
+        <h4 class="heading">Electing Women</h4>
+        <h3 class="subheading">TESTIMONY</h3>
+      </span>
     </nav>
-  </div>
+  </b-navbar>
 </template>
 
 <script>
@@ -64,23 +64,25 @@ export default {
   }
   .heading {
     color: #7a9d96;
-    padding-top: 20px;
+    display: block;
+    text-align: left;
   }
   .subheading {
     color: #dcae1d;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    margin-top: -8px;
   }
 
   .navlinks {
     color: #cae4db;
     text-decoration: none;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
+    float: right;
+    text-align: right;
   }
-  .navbar {
-    padding-bottom: 25px;
-  }
+
   .header{
     text-align: center;
   }

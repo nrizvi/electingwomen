@@ -92,12 +92,12 @@
     padding-top: 25px;
   }
   .carddeck {
-    width: 75%;
     display: block;
     margin: auto;
     background-color: #cae4db;
     padding: 25px;
     border-radius: 5px;
+    padding-top: 120px;
   }
   .video{
     margin-top: 5px;
