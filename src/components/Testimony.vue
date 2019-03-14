@@ -32,6 +32,44 @@
             </footer>
           </blockquote>
         </b-card>
+
+        <b-card title="Card title that wraps to a new line"
+                :img-src="images.asset7"
+                img-alt="Image"
+                img-top v-b-modal.modal1>
+          <!-- v-b-modal.modalName is how you create a modal. Whatever modalName you provide here will be the modal the user accesses when they click the card.-->
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer. 
+          </b-card-text>
+        </b-card>
+        <!-- Here is a sample code for our first modal. There are similar modals to this in the code below.-->
+        <b-modal id="modal1" title="Title goes here.">
+          <p class="my-4">We can add some information about the kitty here.</p>
+        </b-modal>
+
+        <b-card title="Title"
+                :img-src="images.asset6"
+                img-alt="Image"
+                img-top v-b-modal.modal3>
+          <b-card-text>
+            This card has supporting text below as a natural lead-in to additional content.
+          </b-card-text>
+          <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+        </b-card>
+        <b-modal id="modal3" title="Title goes here.">
+          <p class="my-4">Another modal! Yay!</p>
+        </b-modal>
+
+        <!-- I am using modal3 for all the other cards since this is just a demo -->
+        <b-card bg-variant="primary" text-variant="white" v-b-modal.modal3>
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+            </footer>
+          </blockquote>
+        </b-card>
         <b-modal id="modal2" title="Title goes here.">
           <p class="my-4">We can add some more information about the kitty here.</p>
         </b-modal>
@@ -59,6 +97,21 @@
           </blockquote>
         </b-card>
 
+        <b-card title="Card title that wraps to a new line"
+                :img-src="images.asset5"
+                img-alt="Image"
+                img-top v-b-modal.modal1>
+          <!-- v-b-modal.modalName is how you create a modal. Whatever modalName you provide here will be the modal the user accesses when they click the card.-->
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer. 
+          </b-card-text>
+        </b-card>
+        <!-- Here is a sample code for our first modal. There are similar modals to this in the code below.-->
+        <b-modal id="modal1" title="Title goes here.">
+          <p class="my-4">We can add some information about the kitty here.</p>
+        </b-modal>
+
         <b-card v-b-modal.modal3> 
           <b-card-title>Title</b-card-title>
           <b-card-text>
@@ -76,6 +129,20 @@
           </b-card-text>
           <div slot="footer"><small class="text-muted">Footer Text</small></div>
         </b-card>
+        <b-card title="Card title that wraps to a new line"
+                :img-src="images.asset8"
+                img-alt="Image"
+                img-top v-b-modal.modal1>
+          <!-- v-b-modal.modalName is how you create a modal. Whatever modalName you provide here will be the modal the user accesses when they click the card.-->
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer. 
+          </b-card-text>
+        </b-card>
+        <!-- Here is a sample code for our first modal. There are similar modals to this in the code below.-->
+        <b-modal id="modal1" title="Title goes here.">
+          <p class="my-4">We can add some information about the kitty here.</p>
+        </b-modal>
       </b-card-group>
     </div>
   </div>
@@ -91,7 +158,11 @@ import img from '../assets/asset_3.jpg'
                 asset1: require('@/assets/asset_1.jpg'),
                 asset2: require('@/assets/asset_2.jpg'),
                 asset3: require('@/assets/asset_3.jpg'),
-                asset4: require('@/assets/asset_4.jpg')
+                asset4: require('@/assets/asset_4.jpg'),
+                asset5: require('@/assets/asset_5.jpg'),
+                asset6: require('@/assets/asset_6.jpg'),
+                asset7: require('@/assets/asset_7.jpg'),
+                asset8: require('@/assets/asset_8.jpg'),
             },
             videos: {
                 asset1: require('@/assets/asset_video.mp4')

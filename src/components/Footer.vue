@@ -2,15 +2,24 @@
     <footer class="shared-footer">
       <div class="container">
         <p class="float-right">
-          <a href="#">Back to top</a>
-        <p class="float-left">Creating tools and spaces that enable women everywhere to support, bear witness, organize, empower, build transform</p>
+        </p>
+        <p class="float-left">
+        <img :src="images.logo" alt="logo" width="60%"> <br>
+        Creating tools and spaces that enable women everywhere to support, bear witness, organize, empower, build transform</p>
       </div>
     </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data(){
+    return {
+            images: {
+                logo: require('@/assets/WP2P2_logo.png'),
+            }
+          }
+        }
 }
 </script>
 <style>
@@ -18,9 +27,8 @@ export default {
     background-color: #00303f;
     color: white;
     text-align: left;
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    height: 15%;
     flex-shrink: 0;
   }
 .container {
