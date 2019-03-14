@@ -24,6 +24,7 @@
                  allowfullscreen />
 
 
+
         <b-card header="Quote" v-b-modal.modal2>
           <blockquote class="blockquote mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -47,6 +48,25 @@
         <b-modal id="modal1" title="Title goes here.">
           <p class="my-4">We can add some information about the kitty here.</p>
         </b-modal>
+
+        <b-card v-b-modal.modal3> 
+          <b-card-title>Title</b-card-title>
+          <b-card-text>
+            This card has supporting text below as a natural lead-in to additional content.
+          </b-card-text>
+          <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+        </b-card>
+
+        <b-card :img-src="images.asset9" img-alt="Image" overlay v-b-modal.modal3 />
+
+        <b-card :img-src="images.asset10" img-alt="Image" img-top v-b-modal.modal3>
+
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This card has even longer content than the first.
+          </b-card-text>
+          <div slot="footer"><small class="text-muted">Footer Text</small></div>
+        </b-card>
 
         <b-card title="Title"
                 :img-src="images.asset6"
@@ -143,6 +163,26 @@
         <b-modal id="modal1" title="Title goes here.">
           <p class="my-4">We can add some information about the kitty here.</p>
         </b-modal>
+
+        <b-card v-b-modal.modal3> 
+          <b-card-title>Title</b-card-title>
+          <b-card-text>
+            This card has supporting text below as a natural lead-in to additional content.
+          </b-card-text>
+          <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+        </b-card>
+
+        <b-card :img-src="images.asset11" img-alt="Image" overlay v-b-modal.modal3 />
+
+        <b-card :img-src="images.asset14" img-alt="Image" img-top v-b-modal.modal3>
+
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This card has even longer content than the first.
+          </b-card-text>
+          <div slot="footer"><small class="text-muted">Footer Text</small></div>
+        </b-card>
+
       </b-card-group>
     </div>
   </div>
@@ -163,6 +203,12 @@ import img from '../assets/asset_3.jpg'
                 asset6: require('@/assets/asset_6.jpg'),
                 asset7: require('@/assets/asset_7.jpg'),
                 asset8: require('@/assets/asset_8.jpg'),
+                asset9: require('@/assets/asset_9.jpg'),
+                asset10: require('@/assets/asset_10.jpg'),
+                asset11: require('@/assets/asset_11.jpg'),
+                asset11: require('@/assets/asset_12.jpg'),
+                asset11: require('@/assets/asset_13.jpg'),
+                asset11: require('@/assets/asset_14.jpg'),
             },
             videos: {
                 asset1: require('@/assets/asset_video.mp4')
