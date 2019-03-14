@@ -8,6 +8,7 @@ import Login from '@/components/Login'
 import Navigation from '@/components/Navigation'
 import News from '@/components/News'
 import Testimony from '@/components/Testimony'
+import Footer from '@/components/Footer'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -57,6 +58,11 @@ export default new Router({
       path: '/testimony',
       name: 'Testimony',
       component: Testimony
+    },
+    {
+      path: '/footer',
+      name: 'Footer',
+      component: Footer
     }
   ]
 })

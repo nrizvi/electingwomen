@@ -3,7 +3,7 @@
     <div>
       <b-card-group columns>
         <b-card title="Card title that wraps to a new line"
-                img-src="https://placekitten.com/g/400/450"
+                img-src=img1
                 img-alt="Image"
                 img-top v-b-modal.modal1>
           <!-- v-b-modal.modalName is how you create a modal. Whatever modalName you provide here will be the modal the user accesses when they click the card.-->
@@ -82,8 +82,11 @@
 </template>
 
 <script>
+import img from '../assets/asset_3.jpg'
   export default {
     name: 'Testimony',
+    img1: img
+    
 }
 </script>
 
