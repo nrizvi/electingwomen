@@ -19,9 +19,9 @@ export default {
     color: white;
     text-align: left;
     bottom: 0;
-    position: absolute;
     width: 100%;
     height: 15%;
+    flex-shrink: 0;
   }
 .container {
   padding-top: 2%;

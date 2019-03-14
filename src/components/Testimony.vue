@@ -1,15 +1,15 @@
 <template>
-  <div class="carddeck">
+  <div class="carddeck main-container">
     <div>
       <b-card-group columns>
         <b-card title="Card title that wraps to a new line"
-                img-src=img1
+                :img-src="images.asset1"
                 img-alt="Image"
                 img-top v-b-modal.modal1>
           <!-- v-b-modal.modalName is how you create a modal. Whatever modalName you provide here will be the modal the user accesses when they click the card.-->
           <b-card-text>
             This is a wider card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
+            This content is a little bit longer. 
           </b-card-text>
         </b-card>
         <!-- Here is a sample code for our first modal. There are similar modals to this in the code below.-->
@@ -20,7 +20,7 @@
         <!-- the video does not need a modal since it is already hosted on YouTube -->
         <b-embed class="video" type="iframe"
                  aspect="16by9"
-                 src="https://www.youtube.com/embed/PPn6NyZZZn4"
+                 :src="videos.asset1"
                  allowfullscreen />
 
 
@@ -37,7 +37,7 @@
         </b-modal>
 
         <b-card title="Title"
-                img-src="https://placekitten.com/500/350"
+                :img-src="images.asset2"
                 img-alt="Image"
                 img-top v-b-modal.modal3>
           <b-card-text>
@@ -67,9 +67,9 @@
           <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
         </b-card>
 
-        <b-card img-src="https://picsum.photos/400/400/?image=41" img-alt="Image" overlay v-b-modal.modal3 />
+        <b-card :img-src="images.asset3" img-alt="Image" overlay v-b-modal.modal3 />
 
-        <b-card img-src="https://picsum.photos/400/200/?image=41" img-alt="Image" img-top v-b-modal.modal3>
+        <b-card :img-src="images.asset4" img-alt="Image" img-top v-b-modal.modal3>
           <b-card-text>
             This is a wider card with supporting text below as a natural lead-in to additional content.
             This card has even longer content than the first.
@@ -85,8 +85,19 @@
 import img from '../assets/asset_3.jpg'
   export default {
     name: 'Testimony',
-    img1: img
-    
+     data() {
+        return {
+            images: {
+                asset1: require('@/assets/asset_1.jpg'),
+                asset2: require('@/assets/asset_2.jpg'),
+                asset3: require('@/assets/asset_3.jpg'),
+                asset4: require('@/assets/asset_4.jpg')
+            },
+            videos: {
+                asset1: require('@/assets/asset_video.mp4')
+            }
+        }
+    }
 }
 </script>
 
@@ -101,6 +112,7 @@ import img from '../assets/asset_3.jpg'
     padding: 25px;
     border-radius: 5px;
     padding-top: 120px;
+    flex: 1 0 auto;
   }
   .video{
     margin-top: 5px;
