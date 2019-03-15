@@ -29,5 +29,4 @@
     max-width: 25%;
     margin: auto;
   }
-  
 </style>
