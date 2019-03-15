@@ -5,7 +5,7 @@
         </p>
         <p class="float-left">
         <img :src="images.logo" alt="logo" width="60%"> <br>
-        Creating tools and spaces that enable women everywhere to support, bear witness, organize, empower, build transform</p>
+        Creating tools and spaces that enable women everywhere to support, bear witness, organize, empower, build, transform<br><br>© 2019 Women's P2P Network. All rights reserved.</p>
       </div>
     </footer>
 </template>
@@ -23,13 +23,14 @@ export default {
 }
 </script>
 <style>
-.shared-footer {
+  .shared-footer {
     background-color: #00303f;
     color: white;
     text-align: left;
     position: absolute;
     width: 100%;
     flex-shrink: 0;
+    margin-top:15%;
   }
 .container {
   padding-top: 2%;
