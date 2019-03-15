@@ -30,7 +30,7 @@ export default {
     position: absolute;
     width: 100%;
     flex-shrink: 0;
-    margin-top:10%;
+    margin-top:15%;
   }
 .container {
   padding-top: 2%;
