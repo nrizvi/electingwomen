@@ -3,10 +3,13 @@
     <h3 class="italic">Welcome to the Women's Peer-to-Peer Network Electing Women Toolkit!</h3>
     <h4>Are you a member?</h4>
     <b-button v-b-modal.login>Yes</b-button>
-    <b-button class="no">No</b-button>
+    <b-button class="no" v-b-modal.notAMember>No</b-button>
+        <b-modal id="notAMember" title="">
+          If you are a member of an affiliate organization, please sign-up. 
+        </b-modal>
     <b-modal id="login" title="Login">
       <b-form>
-        Username:<b-input type="text" v-model="userid" /> </b-form-group>
+        Username:<b-input type="text" v-model="userid" /> 
         <b-form-group @submit.prevent>
           <label for="textPassword">Password</label>
           <b-input type="password" id="textPassword" aria-describedby="passwordHelpBlock" />
@@ -20,7 +23,7 @@
             <b-button v-b-toggle.collapse1_inner>Yes</b-button>
             <b-button>No</b-button>
             <b-collapse id="collapse1_inner" class="mt-2">
-              <b-card>You are now viewing the candidate site content available to authorized users only.</b-card>
+              <b-card>You are now viewing the site content available to authorized users only.</b-card>
             </b-collapse>
           </b-card>
         </b-collapse>
@@ -34,6 +37,7 @@
 export default {
   name: 'Home' 
   }
+  
 </script>
 <style>
   .content{
