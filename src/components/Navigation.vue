@@ -47,6 +47,11 @@ export default {
          id: 5,
          text: 'Login',
          page: '/Login'
+        },
+        {
+          id: 6,
+          text: 'Home',
+          page: '/'
         }
       ]
     }
