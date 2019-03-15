@@ -23,13 +23,14 @@ export default {
 }
 </script>
 <style>
-.shared-footer {
+  .shared-footer {
     background-color: #00303f;
     color: white;
     text-align: left;
     position: absolute;
     width: 100%;
     flex-shrink: 0;
+    margin-top:15%;
   }
 .container {
   padding-top: 2%;

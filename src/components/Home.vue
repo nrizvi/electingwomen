@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h3 class="italic">Welcome to the Women's Peer-to-Peer Network Electing Women Toolkit!</h3>
+    <h3 class="italic">Welcome to Women's P2P Network’s Electing Women Platform!</h3>
     <h4>Are you a member?</h4>
     <b-button v-b-modal.login>Yes</b-button>
     <b-button class="no" v-b-modal.notAMember>No</b-button>

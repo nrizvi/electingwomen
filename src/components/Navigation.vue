@@ -30,7 +30,7 @@ export default {
         },
         {
           id: 2,
-          text: 'Candidate Services',
+          text: 'Candidate Toolkit',
           page:'/CandidateServices'
         },
         {

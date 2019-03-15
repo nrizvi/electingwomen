@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Candidate Services</h1>
+    <h1>Candidate Toolkit</h1>
     <p>UNDER CONSTRUCTION</p>
   </div>
 </template>
