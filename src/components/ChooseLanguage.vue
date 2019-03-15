@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Choose Language</h1>
-    <p>Here is some information. This is the Choose Language page</p>
+    <h3>More languages coming soon!!</h3>
   </div>
 </template>
 
@@ -11,4 +10,7 @@ export default {
 }
 </script>
 <style>
+  h3{
+    margin-top: 190px;
+  }
 </style>

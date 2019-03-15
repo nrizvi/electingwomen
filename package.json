@@ -16,8 +16,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.14",
+    "google-maps": "^3.3.0",
     "vue": "^2.6.8",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue2-google-maps": "^0.10.6"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
